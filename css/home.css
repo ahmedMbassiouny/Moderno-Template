@@ -1,0 +1,225 @@
+:root {
+  --main-color: #3171cf;
+}
+body {
+	font-family: 'Lora', serif;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* nav */
+nav .navbar-toggler {
+  transition: 0.5s;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav .navbar-toggler:hover {
+  color: var(--main-color) !important;
+}
+nav .offcanvas-end {
+  width: fit-content !important;
+}
+nav .offcanvas-end .close-icon {
+  font-weight: bolder;
+  transition: 0.5s;
+}
+nav .offcanvas-end .close-icon:hover {
+  color: var(--main-color);
+}
+nav .offcanvas-end .btn-close:focus {
+  box-shadow: none;
+}
+nav .offcanvas-end .nav-link {
+  transition: 0.5s;
+}
+nav .offcanvas-end .nav-link:hover {
+  color: var(--main-color);
+}
+nav .offcanvas-end .social-icons .soc-icon {
+  background: #c5bfbf !important;
+  color: #333;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+nav .offcanvas-end .social-icons .soc-icon:hover {
+  color: var(--main-color);
+  background: #eee !important;
+}
+/* landing */
+.landing {
+  background-image: linear-gradient(rgb(51 51 51 / 50%), rgb(51 51 51 / 50%)),
+    url(../images/bg-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.landing h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 45px 0;
+}
+.landing h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 45px 0;
+}
+.landing p {
+  max-width: 650px;
+  margin: auto;
+}
+.landing a {
+  background-color: var(--main-color);
+  padding: 15px 20px;
+  margin-top: 40px;
+  border: 3px solid var(--main-color);
+  transition: 0.5s;
+}
+.landing a:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
+/* service */
+.service .serv-icon {
+  color: var(--main-color);
+  font-size: 40px;
+  border: 1px solid #333;
+  width: 30px;
+  height: 30px;
+  padding: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: 0.5s;
+}
+.service .serv-icon:hover {
+  color: #fff;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+/* portfolio */
+.portfolio {
+  background: #f3efef;
+}
+.portfolio .port-box {
+  position: relative;
+}
+.portfolio .port-box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 100;
+}
+.portfolio .port-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000091;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+  transition: 0.5s;
+}
+.portfolio .port-box:hover p {
+  opacity: 1;
+}
+.portfolio .port-box:hover::after {
+  opacity: 1;
+}
+/* Contact */
+.contact .mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+.contact .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+.contact .gmap_iframe {
+  height: 400px !important;
+}
+.contact .form-item{
+  padding: 0;
+}
+.contact .form-item input ,
+.contact .form-item textarea {
+  background: #f1f4f7;
+  border: 0;
+  outline: 0;
+}
+.contact .form-item input::placeholder ,
+.contact .form-item textarea::placeholder {
+  transition: .5s;
+}
+.contact .form-item input:focus::placeholder ,
+.contact .form-item textarea:focus::placeholder {
+  opacity: 0;
+}
+.contact .form-item .send-btn {
+  background-color: var(--main-color) ;
+  padding: 15px 20px ;
+  border: 3px solid var(--main-color) ;
+  transition: 0.5s ;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.contact .form-item .send-btn:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
+.contact .contact-text h2 {
+  color: var(--main-color);
+}
+/* footer */
+footer {
+  background-color: #333333;
+  color: #fff;
+}
+footer span{
+  color: var(--main-color);
+}
+footer .social-icons .soc-icon {
+  background: #c5bfbf !important;
+  color: #333;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+footer .social-icons .soc-icon:hover {
+  color: var(--main-color);
+  background: #eee !important;
+}
